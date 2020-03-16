@@ -1,0 +1,40 @@
+1.什么是HTML：
+    HTML是用来描述网页的一种语言
+        HTML指的是超文本标记语言
+        标记语言是一套标记标签
+        HTML使用标记标签来描述网页
+2.HTML标签
+    HTML标记标签通常被称为HTML标签
+        HTML标签是由尖括号包围的关键词，比如<html>
+        HTML标签通常是成对出现的，比如<html></html>
+        标签对中的第一个标签是开始标签，第二个标签是结束标签
+        空标签：没有结束标签，直接在开始标签中结束（比如，input标签）
+3.HTML元素
+    元素 = 标签 + 属性 + 元素文本内容
+    例如：<a href="http://www.baidu.com">百度一下</a>
+    标签：<a></a>
+    属性：为html元素提供各种附加信息的就是属性（id,name,class...）
+    元素文本内容：显示在页面上的内容
+4.HTML结构
+    一个html是有无数的元素嵌套而成
+    一个html肯定会有head和body两部分，即头和主体部分，head中定义js（脚本）、css（样式）,body中定义页面显示的主体内容
+    html页面渲染顺序：从上到下
+
+5.常见需要掌握的html元素
+    文本输入框
+        <input type="text" value="第一个输入框"/>
+    选择框
+        <input type="checkbox"/>
+    单选/复选框
+        <input type="radio"/>
+    按钮
+        <input type="button"/>
+    文本上传
+        <input type="file"/>
+    密码输入框
+        <input type="password"/>
+    下拉框
+        <select><option></option></select>
+    超链接
+        <a href="http://www.baidu.com">百度一下</a>
+    
