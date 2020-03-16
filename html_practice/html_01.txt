@@ -37,4 +37,33 @@
         <select><option></option></select>
     超链接
         <a href="http://www.baidu.com">百度一下</a>
+    表格
+        <form>
+            <table>
+                <tr><td>1</td><td>2</td></tr>
+                <tr><td>3</td><td>4</td></tr>
+                <tr><td>5</td><td>6</td></tr>
+            </table>
+        </form>
+    图片
+        <img src="">
+    有序列表
+        <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ol>
+    无序列表
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    文本域
+        <textarea rows="" cols=""></textarea>
+    iframe
+        内联框架，可实现页面内嵌另一页面
+        示例:<iframe src="https://www.baidu.com" width="200" height="200"></iframe>
+    div元素
+        <div>元素常用作布局工具，因为能轻松地通过css对其进行定制
     
