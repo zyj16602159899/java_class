@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM练习</title>
+</head>
+<body>
+    <input type="text" id="test1" class="cc" value="1">
+    <br>
+    <input type="text" id="test2" class="cc" value="2">
+    <br>
+    <input type="text" id="test3" class="cc" value="3">
+    <script type="text/javascript">
+        // 根据id来定位
+        // var ele1 = document.getElementById("test1");
+        // alert(ele1.value);
+
+        // 根据样式来定位
+        // var ele2 = document.getElementsByClassName("cc");
+        // var ee = ele2[2];
+        // alert(ee.value);
+
+        // 根据标签名来定位
+        var ele3 = document.getElementsByTagName("input");
+        var bb = ele3[0];
+        alert(bb.value);
+    </script>
+</body>
+</html>

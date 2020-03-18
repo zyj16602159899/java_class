@@ -1,0 +1,19 @@
+1.DOM节点
+    每一个页面都可以用一下一个树形结构描述，html是根节点，其他都是子节点。
+                                文档
+                                根元素
+                    元素（head）            元素（body)
+                    元素（title）   属性（href） 元素（a) 元素（h1）
+
+    我们可以把上面这一个模型称为文档对象模型--dom，document object model。
+    注意：
+        1.dom节点其实就是html页面的元素节点。
+        2.dom编程其实就是通过JavaScript去操作页面元素
+2.两个重要的对象
+    window：表示浏览器中打开的窗口
+    document：代表窗口中显示的当前文档（当前页面）
+    注意：window是document的父节点，通过document节点可以遍历到文档里的所有子节点。
+3.document对象定位元素的三种常见方法：
+    1.id-->document.getElementById();
+    2.标签名-->document.getElementsByTagName();
+    3.class样式-->document.getElementsByClassName();
