@@ -2,8 +2,8 @@
     每一个页面都可以用一下一个树形结构描述，html是根节点，其他都是子节点。
                                 文档
                                 根元素
-                    元素（head）            元素（body)
-                    元素（title）   属性（href） 元素（a) 元素（h1）
+                    元素（head）            元素（body）
+                    元素（title）   属性（href） 元素（a）元素（h1）
 
     我们可以把上面这一个模型称为文档对象模型--dom，document object model。
     注意：
@@ -17,3 +17,46 @@
     1.id-->document.getElementById();
     2.标签名-->document.getElementsByTagName();
     3.class样式-->document.getElementsByClassName();
+4.元素操作：取值/赋值
+    获取元素属性值
+    var a = document.getElementById("test1").value;
+    给元素的属性赋值
+    document.getElementById("test").value = "柠檬班";
+    获取元素的文本值
+    text:纯文本值，不包含任何标签信息
+5.DOM事件
+    常见dom事件
+        onload():当网页或者元素已加载完成时触发此事件
+            window.onload = function(){
+                alert("page is loaded");
+            }
+        onblur():当元素失去焦点时触发此事件
+            window.onload = function(){
+                document.getElementById("test1").onblur = function(){
+                    alert(this.value);
+                }
+            }
+        onfocus():当元素聚焦时触发此事件
+            window.onload = function(){
+                document.getElementById("test2").onfocus = function(){
+                    this.value = '22222';
+                }
+            }
+        onchange():当元素的value值改变时触发此事件
+            window.onload = function(){
+                document.getElementById("test3").onchange = function(){
+                    alert(this.value);
+                }
+            }
+        onclick():当元素被点击时触发此事件
+            window.onload = function(){
+                document.getElementById("test4").onclick = function(){
+                    alert("test4被点击了!");
+                }
+            }
+        onmouseover():当鼠标移动到某元素上时触发此事件
+            window.onload = function(){
+                document.getElementById("test5").onmouseover = function(){
+                    alert("鼠标移到test5上了!");
+                }
+            }

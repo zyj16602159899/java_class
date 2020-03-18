@@ -3,6 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        // 给窗口绑定就绪事件
+        // window.onload = function() {//匿名函数
+        //     alert("page is onload");    //事件触发后要执行的逻辑
+        // }
+
+        // window.onload = function() {
+        //     var input1 = document.getElementById("test1");
+        //     input1.onblur = function () {//元素失去焦点时触发此事件
+        //         alert("鼠标移开!")
+        //     }
+        // }
+
+        // window.onload = function () {
+        //     var input2 = document.getElementById("test2");
+        //     input2.onfocus = function () {//元素聚焦时触发此事件
+        //         alert("此处被聚焦!")
+        //     }
+        // }
+
+        // window.onload = function () {
+        //     var input2 = document.getElementById("test3");
+        //     input2.onchange = function () {//元素的value值改变时触发此事件
+        //     alert("此处的值被修改!")
+        //     }
+        // }
+
+        // window.onload = function () {
+        //     var input2 = document.getElementById("test3");
+        //     input2.onclick = function () {//元素被点击时触发此事件
+        //     alert("test3被点击了!")
+        //     }
+        // }
+
+        window.onload = function () {
+            var input2 = document.getElementById("test2");
+            input2.onmouseover = function () {//鼠标移动到某元素上时触发此事件
+            alert("鼠标移到test2上了!")
+            }
+        }
+    </script>
     <title>DOM练习</title>
 </head>
 <body>
@@ -11,6 +52,8 @@
     <input type="text" id="test2" class="cc" value="2">
     <br>
     <input type="text" id="test3" class="cc" value="3">
+    <br>
+    <a href="" id="aa">百度一下</a>
     <script type="text/javascript">
         // 根据id来定位
         // var ele1 = document.getElementById("test1");
@@ -22,9 +65,17 @@
         // alert(ee.value);
 
         // 根据标签名来定位
-        var ele3 = document.getElementsByTagName("input");
-        var bb = ele3[0];
-        alert(bb.value);
+        // var ele3 = document.getElementsByTagName("input");
+        // var bb = ele3[0];
+        // alert(bb.value);
+
+        // 给元素的属性赋值
+        // var ele3 = document.getElementById("test3");
+        // ele3.value = "5";
+
+        // 获取元素文本
+        // var ele4 = document.getElementById("aa");
+        // alert(ele4.text)
     </script>
 </body>
 </html>
