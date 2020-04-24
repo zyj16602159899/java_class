@@ -7,14 +7,14 @@
 #     func()
 
 # 通过递归函数实现任意数的阶乘
-def fun(n):
-    if n == 1:      # 递归临界点：不再调用自身函数的条件
-        return n
-    else:
-        return n*fun(n-1)
+# def fun(n):
+#     if n == 1:      # 递归临界点：不再调用自身函数的条件
+#         return n
+#     else:
+#         return n*fun(n-1)
 
-a = fun(4)
-print(a)
+# a = fun(4)
+# print(a)
 
 # 作业：
 # 1.实现斐波那契数列，输入一个数列的位置数，返回斐波那契数列相应位置的值（第一个数是1，后面的数等于前2个数相加）
@@ -39,6 +39,22 @@ print(a)
 # filter()函数：用于过滤序列，一般可结合匿名函数来进行使用
 # zip()函数：用于将可迭代的对象作为参数，将对象中对应的元素打包成一个个元祖
 
+# res = zip([1,2,3],[11,22,33])
+# print(list(res))
+
 # 匿名函数
-# 定义：是python中的一种特殊的函数，不需要使用def去定义，也不用起名字，用lamda表达式来定义，这种就叫匿名函数。
-# 格式：lamda 
+# 定义：是python中的一种特殊的函数，不需要使用def去定义，也不用起名字，用lambda表达式来定义，这种就叫匿名函数。
+# 格式：lambda 参数： 表达式(返回值)
+# 适用场景：简单的函数定义（只有一个表达式）
+def add(a,b):
+    return a+b
+# 方式一
+res1 = lambda a,b:a + b
+print(res1(11,22))
+# 方式二：一般不用这种方式！
+res2 = (lambda a,b:a + b)(22,33)
+print(res2)
+
+li = [1,2,33,4,66,777,9]
+res3 = filter(lambda x: x<10,li)
+print(list(res3))
