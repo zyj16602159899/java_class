@@ -36,7 +36,7 @@
 # 内置函数都属于纯函数（有些内置函数是类，这种不是纯函数）
 # 常用的内置函数：
 # map()函数：会根据提供的函数对指定序列做映射
-# filter()函数：用于过滤序列，一般可结合匿名函数来进行使用
+# filter()函数：用于过滤序列，【一般可结合匿名函数来进行使用】
 # zip()函数：用于将可迭代的对象作为参数，将对象中对应的元素打包成一个个元祖
 
 # res = zip([1,2,3],[11,22,33])
@@ -46,15 +46,47 @@
 # 定义：是python中的一种特殊的函数，不需要使用def去定义，也不用起名字，用lambda表达式来定义，这种就叫匿名函数。
 # 格式：lambda 参数： 表达式(返回值)
 # 适用场景：简单的函数定义（只有一个表达式）
-def add(a,b):
-    return a+b
-# 方式一
-res1 = lambda a,b:a + b
-print(res1(11,22))
-# 方式二：一般不用这种方式！
-res2 = (lambda a,b:a + b)(22,33)
-print(res2)
 
-li = [1,2,33,4,66,777,9]
-res3 = filter(lambda x: x<10,li)
-print(list(res3))
+# 一般方式：
+# def add(a,b):
+#     return a+b
+# # lambda方式一
+# res1 = lambda a,b:a + b
+# print(res1(11,22))
+# # lambda方式二：一般不用这种方式！
+# res2 = (lambda a,b:a + b)(22,33)
+# print(res2)
+
+# 案例
+# li = [1,2,33,4,66,777,9]
+# res3 = filter(lambda x: x<10,li)
+# print(list(res3))
+
+# li2 = [lambda i: i%5==0 for i in range(11)]
+# print(li2)
+
+# 三目运算符
+# 方式一
+# a = 100
+# if a > 100:
+#     print('100')
+# else:
+#     print('000')
+# # 方式二【三目运算符】
+# print('100') if a > 100 else print('000')
+
+# 偏函数
+# 在python的内置模块functools提供了很多有用的功能，其中一个就是偏函数（partial）
+# 偏函数的作用：
+# 当函数的参数个数太多，需要简化时，使用functools.partial可以创建一个新的函数，这个新函数可以固定
+# 住原函数的部分参数，从而在调用时更简单。
+# 用法：
+from functools import partial
+
+li = [1,3,5,66,777,88,222]
+li2 = [6,15,3,0,999]
+filter2 = partial(filter,lambda x: x>5)
+res = filter2(li)
+res2 = filter2(li2)
+print(list(res))
+print(list(res2))
