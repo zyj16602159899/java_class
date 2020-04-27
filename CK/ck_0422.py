@@ -1,6 +1,7 @@
 # 递归函数
 # 在函数中调用函数自身，我们把这样的函数叫做递归函数
 # 递归边界：退出递归的终止条件(必须要设置，否则会陷入死循环)
+# 递归次数的最大限制是1000次
 
 # def func():
 #     print('999')
@@ -18,10 +19,53 @@
 
 # 作业：
 # 1.实现斐波那契数列，输入一个数列的位置数，返回斐波那契数列相应位置的值（第一个数是1，后面的数等于前2个数相加）
+# def fixb(n):
+#     if n==1 or n==2:
+#         return 1
+#     else:
+#         return fixb(n-1)+fixb(n-2)
+# res = fixb(3)
+# print(res)
 # 2.第三个月起每个月都生一对兔子，小兔子长到第三个月后每个月又生一对兔子，假设兔子都不死，问每个月的兔子
 # 总数是多少？（意味着生长期为2）
+# def fun(n):
+#     if n==1 or n==2:
+#         return 1
+#     else:
+#         return fun(n-1)+fun(n-2)
+# res = fun(6)
+# print(res)
 # 3.小明有100元，打算买100本书，A类书籍5元一本，B类书籍3元一本，C类数据1元两本，请算出小明一共有多少
 # 种买法？
+# 方式一：
+# money = 100
+# book = 100
+# count = 0
+# for a in range(int(money/5)):
+#     for b in range(int(money/3)):
+#         for c in range(int(money/0.5)):
+#             if a*5 + b*3 + c*0.5 <=100 and a + b + c ==100:
+#                 print(a,b,c)
+#                 count += 1
+# print(count)
+
+# 方式2：
+count = 0
+def count_book(a=0,b=0,c=0):
+    if a*5 + b*3 + c*0.5 <=100 and a + b + c ==100:
+        print(a,b,c)
+        global count
+        count += 1
+    if a < int(100/5):
+        if b < int(100/3):
+            if c < 100:
+                return count_book(a,b,c+1)
+            else:
+                return count_book(a,b+1)
+        else:
+            return count_book(a+1)
+res = count_book()
+print(res)
 
 # 纯函数
 # 一个函数的返回结果只依赖于它的参数，并且在执行过程里面没有副作用，就把这个函数叫做纯函数
@@ -81,12 +125,13 @@
 # 当函数的参数个数太多，需要简化时，使用functools.partial可以创建一个新的函数，这个新函数可以固定
 # 住原函数的部分参数，从而在调用时更简单。
 # 用法：
-from functools import partial
 
-li = [1,3,5,66,777,88,222]
-li2 = [6,15,3,0,999]
-filter2 = partial(filter,lambda x: x>5)
-res = filter2(li)
-res2 = filter2(li2)
-print(list(res))
-print(list(res2))
+# from functools import partial
+
+# li = [1,3,5,66,777,88,222]
+# li2 = [6,15,3,0,999]
+# filter2 = partial(filter,lambda x: x>5)
+# res = filter2(li)
+# res2 = filter2(li2)
+# print(list(res))
+# print(list(res2))
