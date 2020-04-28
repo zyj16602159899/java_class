@@ -49,7 +49,7 @@
 #                 count += 1
 # print(count)
 
-# 方式2：
+# 方式2：【递归】
 count = 0
 def count_book(a=0,b=0,c=0):
     if a*5 + b*3 + c*0.5 <=100 and a + b + c ==100:
