@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="73e9d05c-b844-4ad0-85ff-f0c159fa37b4" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/ck_0502.py" afterDir="false" />
     </list>
+=======
+    <list default="true" id="67ace4f2-ba6f-470f-a4b0-d5ad07af2140" name="Default Changelist" comment="" />
+>>>>>>> 55c8935a5ac3942139e84fb43d665fde65c1e0dc
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -24,6 +29,9 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+=======
+  <component name="ProjectId" id="1bWJMZRiY1SPRC01RTY1TUbBQZ3" />
+>>>>>>> 55c8935a5ac3942139e84fb43d665fde65c1e0dc
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -40,7 +48,11 @@
     </option>
   </component>
   <component name="RunManager">
+<<<<<<< HEAD
     <configuration name="ck_0502" type="PythonConfigurationType" factoryName="Python">
+=======
+    <configuration name="ck_0506" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> 55c8935a5ac3942139e84fb43d665fde65c1e0dc
       <module name="CK" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -48,11 +60,19 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+<<<<<<< HEAD
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ck_0502.py" />
+=======
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/0506" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0506/ck_0506.py" />
+>>>>>>> 55c8935a5ac3942139e84fb43d665fde65c1e0dc
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -61,12 +81,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
+=======
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ck_0506" />
+      </list>
+    </recent_temporary>
+>>>>>>> 55c8935a5ac3942139e84fb43d665fde65c1e0dc
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="73e9d05c-b844-4ad0-85ff-f0c159fa37b4" name="Default Changelist" comment="" />
       <created>1588409376576</created>
       <option name="number" value="Default" />
@@ -86,4 +115,14 @@
       </map>
     </option>
   </component>
+=======
+      <changelist id="67ace4f2-ba6f-470f-a4b0-d5ad07af2140" name="Default Changelist" comment="" />
+      <created>1588741868892</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588741868892</updated>
+    </task>
+    <servers />
+  </component>
+>>>>>>> 55c8935a5ac3942139e84fb43d665fde65c1e0dc
 </project>
