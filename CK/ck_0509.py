@@ -5,9 +5,10 @@
 # 注意点：魔术方法都是python内部调用的，自己不要去定义__init__这种双下划线的方法。
 # 
 # __init__方法有什么作用？
-# 在创建对象的时候，自动调用对 创建的对象 进行初始化设置的。
+# 在创建对象的时候，自动调用。对 创建的对象 进行初始化设置的。
 
 # 1.__new__方法
+# 创建实例对象的时候会触发此方法
 # 应用场景：单例模式（只能实例化一个对象）
 
 # 例：最简单的单例模式
@@ -33,3 +34,21 @@ print(n1.age)           # 返回的都是同一个对象，因此n1.age可以打
 
 # 作业：装饰器实现单例模式！
 
+def single(cls):
+    instance = {}
+
+    def fun(*args, ** kwargs):
+        if cls in instance:
+            return instance[cls]
+        else:
+            instance[cls] = cls(*args, **kwargs)
+            return instance[cls]
+
+    return fun
+
+
+@single
+class MyTest:
+    pass
+
+t1 = MyTest()

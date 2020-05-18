@@ -43,10 +43,27 @@ print(res)
 
 m()
 
-# 总结：使用str函数、format函数或者print打印对象时会优先触发str方法，没定义str方法的情况下，会再去找repr方法，
-# 如果都没有，那么才会去找父类的str方法。
+# 总结：使用str函数、format函数或者print打印对象时会优先触发__str__方法，没定义__str__方法的情况下，
+# 会再去找repr方法，如果都没有，那么才会去找父类的str方法。
 
 # 使用repr方法或者交互环境下输入变量，会先找自身的repr方法，自身没有的话，才会去找父类的repr方法。
 
 
 # 作业：通过类来实现装饰器（用到__call__方法）
+class Decorator:
+
+    def __init__(self, func):
+        self.func = func
+
+    def __call__(self, *args, **kwargs):
+        print('这是装饰器里的功能1')
+        self.func()
+        print('这是装饰器里的功能2')
+
+
+@Decorator
+def test_01():
+    print('这是功能函数')
+
+
+test_01()
