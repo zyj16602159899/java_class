@@ -23,11 +23,19 @@ class Test(object):
         else:
             print('设置属性时触发该方法！')
             super().__setattr__(key, value)
+    
+    def __delattr__(self, item):        # 这个方法在删除属性的时候被触发(可以在删除属性的时候干扰操作)
+        if item == 'name':
+            pass
+        else:
+            print('__delattr__方法被触发')
+            super().__delattr__(item) 
 
 
 
 t = Test()
 t.name = 100
 t.age = 888
+del t.name
 print(t.name)
-print(t.age)        # 访问属性的时候，如果属性不存在，会触发__getattr__方法。
+# print(t.age)        # 访问属性的时候，如果属性不存在，会触发__getattr__方法。
