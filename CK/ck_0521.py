@@ -20,12 +20,15 @@ class Test(object):
 
     def __get__(self, instance ,owner):
         print('查询了属性')
+        return self.value
 
     def __set__(self, instance ,value):
         print('设置了属性')
+        self.value = value
 
     def __delete__(self, instance):
         print('删除了属性')
+        del self.value
 
 
 class Model(object):
@@ -34,3 +37,8 @@ class Model(object):
 
 
 m = Model()
+
+m.attr = 100
+del m.attr
+
+print(m.attr)
