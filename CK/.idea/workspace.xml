@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="73e9d05c-b844-4ad0-85ff-f0c159fa37b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ck_0502.py" afterDir="false" />
+    <list default="true" id="bb96b680-276b-427d-a72a-c46543df1036" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ck_0522.py" beforeDir="false" afterPath="$PROJECT_DIR$/ck_0522.py" afterDir="false" />
     </list>
-=======
-    <list default="true" id="67ace4f2-ba6f-470f-a4b0-d5ad07af2140" name="Default Changelist" comment="" />
->>>>>>> 55c8935a5ac3942139e84fb43d665fde65c1e0dc
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -25,13 +21,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1bLRR9XaPpMrNh97nT9Jgszdwit" />
+  <component name="ProjectId" id="1cLJ40doOXmXa6PylKtr6T8LljV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
-=======
-  <component name="ProjectId" id="1bWJMZRiY1SPRC01RTY1TUbBQZ3" />
->>>>>>> 55c8935a5ac3942139e84fb43d665fde65c1e0dc
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -47,12 +40,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-<<<<<<< HEAD
-    <configuration name="ck_0502" type="PythonConfigurationType" factoryName="Python">
-=======
-    <configuration name="ck_0506" type="PythonConfigurationType" factoryName="Python" temporary="true">
->>>>>>> 55c8935a5ac3942139e84fb43d665fde65c1e0dc
+  <component name="RunManager" selected="Python.ck_0525">
+    <configuration name="ck_0522" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CK" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -60,19 +49,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-<<<<<<< HEAD
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ck_0502.py" />
-=======
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/0506" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0506/ck_0506.py" />
->>>>>>> 55c8935a5ac3942139e84fb43d665fde65c1e0dc
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ck_0522.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -81,26 +62,88 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-<<<<<<< HEAD
-=======
+    <configuration name="ck_0524" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CK" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ck_0524.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ck_0525" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CK" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ck_0525.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="orm_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CK" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_0524" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_0524/orm_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ck_0506" />
+        <item itemvalue="Python.ck_0525" />
+        <item itemvalue="Python.orm_model" />
+        <item itemvalue="Python.ck_0524" />
+        <item itemvalue="Python.ck_0522" />
       </list>
     </recent_temporary>
->>>>>>> 55c8935a5ac3942139e84fb43d665fde65c1e0dc
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-<<<<<<< HEAD
-      <changelist id="73e9d05c-b844-4ad0-85ff-f0c159fa37b4" name="Default Changelist" comment="" />
-      <created>1588409376576</created>
+      <changelist id="bb96b680-276b-427d-a72a-c46543df1036" name="Default Changelist" comment="" />
+      <created>1590301744396</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1588409376576</updated>
+      <updated>1590301744396</updated>
     </task>
     <servers />
   </component>
@@ -115,14 +158,4 @@
       </map>
     </option>
   </component>
-=======
-      <changelist id="67ace4f2-ba6f-470f-a4b0-d5ad07af2140" name="Default Changelist" comment="" />
-      <created>1588741868892</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1588741868892</updated>
-    </task>
-    <servers />
-  </component>
->>>>>>> 55c8935a5ac3942139e84fb43d665fde65c1e0dc
 </project>
