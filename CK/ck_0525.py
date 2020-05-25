@@ -13,9 +13,11 @@ import copy
 
 list1 = [1,2,3]
 list2 = copy.deepcopy(list1)        # 深拷贝
+list3 = list1.copy()
 list1.append(5)
 print(list1)
 print(list2)
+print(list3)
 
 # 垃圾回收机制
 # 一句话形容：引用计数机制为主，标记清除和分代收集两种机制为辅的策略
@@ -23,5 +25,12 @@ print(list2)
 #
 # 标记清除
 #
-# 分代收集
+# 分代回收
 #
+
+import gc
+
+
+res = gc.get_threshold()
+
+print(res)
