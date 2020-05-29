@@ -21,36 +21,88 @@
 
 # 二、线程
 
-# threading模块介绍
+# 1. threading模块介绍
 # 创建线程：threading.Thread(target=func)
 # 参数target指定线程执行的任务（函数）
 # 方法              # 说明
+# run()             用以表示线程活动的方法
+# start()           启动线程活动
+# join(time)        设置主线程会等待time秒后再往下走，time默认为子线程结束，多个子线程之间设置的时间值会叠加
+# is_alive()         返回线程是否活动的
+# getName()         返回线程名
+# setName()         设置线程名
+
+# threading.currentThread():    返回当前执行的线程
+# threading.enumerate():        返回正在运行的所有线程（list）。正在运行执线程启动后，结束前，不包括启动前和终止后的线程。
+# threading.activeCount():      返回正在运行的线程数量
 
 
+# 2. 多线程实现多任务
+# （1）使用Thread类来创建线程
+# 第一步：创建线程      t1 = threading.Thread(target=func)
+# 第二步：启动线程      t1.start()      # 当调用start()时，才会真正的创建线程，并且开始执行
 
 
+# import time
+# import threading
 
 
+# def func1():
+#     for i in range(5):
+#         time.sleep(1)
+#         print('---事情1---')
+
+# def func2():
+#     for i in range(6):
+#         time.sleep(1)
+#         print('---事情2---')
 
 
+# t1 = threading.Thread(target=func1, name='th_1')     # 创建一个线程去执行事情1
+# t2 = threading.Thread(target=func2, name='th_2')     # 创建一个线程去执行事情2
 
-import time
+# print(t1.name)          # 打印t1的name属性（方法一）
+# print(t2.name)
+# print(t1.getName())     # 打印t1的name属性（方法二）
+# print(t2.getName())
+# t1.setName('线程1')     # 设置t1的name属性
+# print(t1.getName())
+
+# start_time = time.time()
+# print(t1.is_alive())
+# t1.start()      # 开始执行线程1
+# print(t1.is_alive())
+# t2.start()      # 开始执行线程2
+
+# print(threading.active_count())         # 打印当前活动线程的数量
+# print(threading.enumerate())            # 打印所有活动的线程
+# print(threading.current_thread())       # 打印当前活动的线程
+
+# t1.join()       # 设置主线程等待子线程结束后再往下走
+# t2.join()
+# end_time = time.time()
+
+# print('耗时：',end_time-start_time)
+
+# （2）通过继承Thread类来创建线程
+# 传参数需要重写__init__方法（重写之后要调用父类的init方法）
+
 import threading
+import requests
 
 
-def func1():
-    for i in range(5):
-        print('事情1')
-        time.sleep(1)
+class RequestThread(threading.Thread):
+    """发送requests请求"""
 
-def func2():
-    for i in range(6):
-        print('事情2')
-        time.sleep(1)
+    def __init__(self, url):
+        self.url = url
+        super().__init__()      # 必须调用父类的__init__方法！
+
+    def run(self):
+        res = requests.get(self.url)
+        print('线程：{}--返回的状态码：{}'.format(threading.current_thread(),res.status_code))
 
 
-t1 = threading.Thread(target=func1)     # 创建一个线程去执行事情1
-t2 = threading.Thread(target=func2)     # 创建一个线程去执行事情2
-
-t1.start()      #开始执行线程1
-t2.start()      #开始执行线程2
+for i in range(5):
+    t = RequestThread('http://www.baidu.com')
+    t.start()
