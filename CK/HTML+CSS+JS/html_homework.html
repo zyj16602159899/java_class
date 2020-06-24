@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML表单</title>
+</head>
+<body>
+
+    <form action="" method="GET">
+        <label for="user">邮箱账号：</label>        <!-- label用来激活对应input表单框,for属性必须和相关元素的id属性相同 -->
+        <input type="text" name="user" id="user">
+        <br>
+        <label for="">昵称：</label>
+        <input type="text" name="name">
+        <br>
+        <label for="">密码：</label>
+        <input type="password" name="pwd1">
+        <br>
+        <label for="">确认密码：</label>
+        <input type="password" name="pwd2">
+        <br>
+        <label for="">性别：</label>
+        <input type="radio" name="gender" value="男">男
+        <input type="radio" name="gender" value="女">女
+        <br>
+        <label for="">爱好</label>
+        <input type="checkbox" name="hobby" value="足球">足球
+        <input type="checkbox" name="hobby" value="篮球">篮球
+        <input type="checkbox" name="hobby" value="乒乓球">乒乓球
+        <br>
+        <label for="">生日：</label>
+        <select name="year" id="year">
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+        </select>年
+        <select name="month" id="month">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>月
+        <select name="date" id="date">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>日
+        <br>
+        <label for="">所在地：</label>
+        <select name="country" id="country">
+            <option value="中国">中国</option>
+            <option value="美国">美国</option>
+            <option value="日本">日本</option>
+        </select>
+        <select name="city" id="city">
+            <option value="上海">上海</option>
+            <option value="纽约">纽约</option>
+            <option value="东京">东京</option>
+        </select>
+        <br>
+        <label for="">自我介绍：</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+        <br>
+        <!-- 内联框架 -->
+        <iframe src="https://www.baidu.com" frameborder="0" width="800" height="300"></iframe>
+    </form>
+</body>
+</html>

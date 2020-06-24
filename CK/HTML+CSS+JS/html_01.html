@@ -1,0 +1,101 @@
+<!DOCTYPE html>     <!-- H5的文档声明 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">     <!-- link标签：放在头部中，链接到一个外部样式，即链接外部的css文件 -->
+    <title>HTML基础知识</title>
+</head>
+<body>
+    <!-- 标题标签 -->
+    <h1>一级标题</h1>
+    <h2>二级标题</h2>
+    <h3>三级&nbsp标题</h3>      <!-- &nbsp是空格标签 -->
+    <h4>四级标题</h4>
+    <h5>五级标题</h5>
+    <h6>六级标题</h6>
+    <br>        <!-- 换行标签 -->
+
+    <!-- 段落标签 -->
+    <p>就全国人大常委会法制工作委员会负责人6月18日向十三届全国人大常委会第十九次会议作关于《中华人民共和国香港特别行政区维护国家安全法（草案）》的说明摘要，香港特区行政长官林郑月娥20日发表声明表示，香港特别行政区政府全力支持和配合港区维护国家安全立法工作。</p>
+    <br>
+
+    <hr>        <!-- 下划线标签 -->
+
+    <!-- 块标签 -->
+    <!-- div标签：标签块元素，表示一块内容。 -->
+    <div style="background-color: bisque;width: 100px; height: 70px;">div标签：标签块元素，表示一块内容</div>
+    <br>
+    <!-- span标签：行内标签，表示一行中的一小段内容 -->
+    <span style="color: aqua;">span标签：行内标签，表示一行中的一小段内容</span>
+    <br>
+    <i>i标签：行内元素，字体斜体</i>
+    <br>
+    <em>em标签：行内元素，语义为强调内容，表示重要（倾斜效果）</em>
+    <br>
+    <b>b标签：行内元素，字体加粗</b>
+    <br>
+    <strong>strong标签：行内元素，语义为强调内容，表示非常重要（效果加粗）</strong>
+    <br>
+    <!-- 图片标签 -->
+    <img src="26.jpg" alt="这是一张图片" width="300" height="180">
+    <br>
+    <!-- a标签：超链接 -->
+    <a href="https://www.baidu.com/">百度一下，你就知道</a>
+    <br>
+    <!-- 有序列表 -->
+    <!-- 快捷方式1：ol>li*5 -->
+    <!-- 快捷方式1：ul>(li>a)*5 -->
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <br>
+    <!-- 无序列表 -->
+    <!-- 快捷方式1：ul>li*5 -->
+    <!-- 快捷方式1：ul>(li>a)*5 -->
+    <ul>
+        <li>11</li>
+        <li>22</li>
+        <li>33</li>
+        <li>44</li>
+        <li>55</li>
+    </ul>
+    <br>
+    <!-- 表格 -->
+    <table border="1">
+        <tr>
+            <th>name</th>   <!-- 表头 -->
+            <th>age</th>
+            <th>score</th>
+        </tr>
+        <tr>
+            <td>john</td>
+            <td>20</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>tony</td>
+            <td>19</td>
+            <td>100</td>
+        </tr>
+    </table>
+    <br>
+    <!-- form表单 -->
+    <form action="" method="GET">
+        <label for="">账号</label>
+        <input type="text" name="user"><br>
+        <label for="">密码</label>
+        <input type="password" name="pwd"><br>
+        <input type="submit" value="提交"><br>
+        <input type="button" value="按钮"><br>
+        <input type="radio" value="吃饭">吃饭
+        <input type="radio" value="睡觉">睡觉<br>
+        <input type="file" value="点击上传"><br>
+        <input type="checkbox" value="APP">APP
+        <input type="checkbox" value="UI">UI
+        <input type="checkbox" value="api">api
+    </form>
+</body>
+</html>
