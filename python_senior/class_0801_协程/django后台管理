@@ -1,0 +1,20 @@
+1.本地化
+语言和时区的本地化
+在settings.py文件中修改以下内容：
+使用中文：LANGUAGE_CODE = 'zh-hans'
+中国时间：TIME_ZONE = 'Asia/Shanghai'
+
+2.创建管理员
+命令：python manage.py createsuperuser
+
+3.注册模型类
+告诉django框架根据注册的模型来生成对应表管理页面
+(1)在admin.py文件中，导入models.py文件中的模型类
+(2)输入admin.site.register(类名称)进行注册
+(3)如果想显示数据的名称，则在models.py文件中的模型类中重写__str__
+即：
+def __str__(self):
+    return self.bname(数据名称)
+4.自定义管理页面
+自定义模型管理类。模型管理类就是告诉django在生成的管理页面上显示哪些内容。
+(1)在admin.py文件中，自定义一个模型管理类

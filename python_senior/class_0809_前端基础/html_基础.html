@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML基础练习</title>
+</head>
+<body>
+<h2>有序列表</h2>
+<p>快捷方式：ol>li*5,然后按tab补全</p>
+<p>如果还有其他标签，方法类似，要加括号，如：ol>(li>a)*3</p>
+<ol>
+    <li>11</li>
+    <li>22</li>
+    <li>33</li>
+    <li>44</li>
+    <li>55</li>
+</ol>
+<ol>
+    <li><a href="">百度</a></li>
+    <li><a href="">淘宝</a></li>
+    <li><a href="">京东</a></li>
+</ol>
+<h2>无序列表</h2>
+<p>快捷方式：ul>li*5,然后按tab补全</p>
+<ul>
+    <li>111</li>
+    <li>222</li>
+    <li>333</li>
+    <li>444</li>
+    <li>555</li>
+</ul>
+<h2>表格（table）</h2>
+<p>有border="1",展示边框；无此属性则不展示边框</p>
+<p>tr元素定义表格行，th元素定义表头，td元素定义表格单元</p>
+<table border="1">
+    <tr>
+        <th>name</th>
+        <th>gender</th>
+        <th>age</th>
+    </tr>
+    <tr>
+        <td>小米</td>
+        <td>女</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>小明</td>
+        <td>男</td>
+        <td>25</td>
+    </tr>
+</table>
+<h2>表单（form）</h2>
+<p>action属性：定义表单数据提交地址</p>
+<p>method属性：定义表单提交的方式，如get/post</p>
+<p>form表单中包含的元素：</p>
+<ul>
+    <li>label标签：为表单元素定义文字标注。（label中的for属性值和相关元素的id属性值一致的话，点击标注时会将焦点转到输入框）</li>
+    <li>input标签：定义通用的表单元素</li>
+    <li>textarea标签：定义多行文本输入框。（clos属性表示默认每行最多多少个字符，rows属性表示默认多少行）</li>
+    <li>select标签：定义下拉表单元素</li>
+    <li>option标签：与select标签配合，定义下拉表单元素中的选项</li>
+</ul>
+<p>input标签</p>
+<ul>
+    <li>value属性：定义表单元素的值</li>
+    <li>name属性：定义表单元素的名称，此名称是提交数据时的键名</li>
+    <li>type属性：常用的有以下10种</li>
+</ul>
+<ul>
+    <li>text:定义单行文本输入框</li>
+    <li>password:定义密码输入框</li>
+    <li>radio:定义单选框，如果多个radio标签定义同一个value，则页面只能勾选一个</li>
+    <li>checkbox:定义复选框</li>
+    <li>file:定义上传文件</li>
+    <li>submit:定义提交按钮</li>
+    <li>button:定义一个普通按钮</li>
+    <li>reset:定义重置按钮</li>
+    <li>image:定义图片作为提交按钮，用src属性定义图片地址</li>
+    <li>hidden:定义一个隐藏的表单域，用来存储值</li>
+</ul>
+<form action="" method="get">
+    <label for="username">账号</label>
+    <input type="text" name="username" id="username"><br>
+    <label for="password">密码</label>
+    <input type="text" name="password" id="password"><br>
+    <label for="">性别</label>
+    <input type="radio" name="gender" value="男">男
+    <input type="radio" name="gender" value="女">女
+    <br>
+    <label for="">爱好</label>
+    阅读<input type="checkbox" name="hobby" value="read">
+    篮球<input type="checkbox" name="hobby" value="basketball">
+    游戏<input type="checkbox" name="hobby" value="game">
+    <br>
+    <label for="">出生日期</label>
+    <select name="year" id="year">年
+        <option value="1990">1990</option>
+        <option value="1991">1991</option>
+        <option value="1992">1992</option>
+        <option value="1993">1993</option>
+        <option value="1994">1994</option>
+    </select>
+    <select name="month" id="month">月
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <select name="day" id="day">日
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+    </select><br>
+    <label for="">座右铭</label>
+    <textarea name="motto" id="motto" cols="30" rows="10"></textarea>
+    <br>
+    <input type="hidden" name="token" value="aaabbbccc888999">
+    <input type="submit">
+</form>
+</body>
+</html>

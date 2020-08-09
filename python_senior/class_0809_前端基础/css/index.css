@@ -1,0 +1,15 @@
+.top_menu{
+    height:100px;
+    background:blue;
+    background:rgb(255,122,111);
+    background:#0033CC;
+}
+.title{
+    width:350px;
+    color:#fff;
+    font:bold 32px/100px '微软雅黑';
+    text-align:center;
+}
+.menu_list li{
+
+}

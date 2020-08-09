@@ -1,0 +1,20 @@
+1.一台机器上两个项目依赖于相同包的不同版本，则会导致一些项目运行失败。
+解决方案：虚拟环境
+虚拟环境是真实python环境的复制版本。
+
+2.安装虚拟环境的命令：
+（1）安装虚拟环境：pip install virtualenv
+（2）安装虚拟环境扩展包：pip install virtualenvwrapper
+（3）编辑家目录下面的.bashrc文件，添加下面两行。
+vi .bashrc
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+（4）使用source .bashrc使其生效一下
+创建虚拟环境命令（默认python2.7）：mkvirtualenv 虚拟环境名称
+创建python3虚拟环境：mivirtualenv -p python3 虚拟环境名称
+（5）退出虚拟环境的命令：deactivate
+（6）进入虚拟环境命令：workon 虚拟环境名称
+查看所有的虚拟环境：workon 按2下tab键
+删除虚拟环境：rmvirtualenv 虚拟环境名称
+（7）在虚拟环境下安装各种依赖包，命令和真实环境一样。
+注意：不能使用sudo pip install 包名，这个命令会把包安装到真实的主机环境上！

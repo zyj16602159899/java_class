@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS基础</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <style>
+        .menu2{
+            height:100px;
+            background:blue
+        }
+    </style>
+</head>
+<body>
+
+<h2>css引入的三种形式</h2>
+<p>1.内联式：标签的style属性来设置</p>
+<p>2.嵌入式：在head通过style来设置</p>
+<p>3.外联式：link标签映入，css写在一个.css结尾的文件中</p>
+
+<div style="height:100px;background:antiquewhite">这是菜单栏一</div>
+<br>
+<div class="menu2">这是菜单栏二</div>
+<br>
+<div class="menu3">这是菜单栏三</div>
+<br>
+
+<h2>css背景</h2>
+<h4>1.背景色的3种设置方式</h4>
+<p>1.通过颜色单词表示，比如red、blue、gold</p>
+<p>2.通过rgb()，括号里有3个参数(或rgba()，括号里有4个参数，可以用来设置深浅度)，如rgb(255,0,0)</p>
+<p>3.通过十六进制数值表示，比如#FFFF00表示黄色</p>
+<br>
+<h4>2.设置背景图像</h4>
+<p>background-image：要把图像放入背景，属性的默认值是none，表示背景上没有放置任何图像。如果需要设置一个背景图像，必须为这个属性设置一个 URL值</p>
+body {background-image:url(图片路径);}
+<p>大多数背景都应用到body元素，不过并不仅限于此。</p>
+<h5>背景图平铺</h5>
+<p>如果需要在页面上对背景图像进行平铺，可以使用background-repeat属性</p>
+<p>属性值：</p>
+<ul>
+    <li>repeat:导致图像在水平垂直方向上都平铺，就像以往背景图像的通常做法一样</li>
+    <li>repeat-x:图像只在水平上重复</li>
+    <li>repeat-y:图像在垂直方向上重复</li>
+    <li>no-repeat:不允许图像在任何方向上平铺</li>
+</ul>
+<br>
+
+<h2>css文本样式</h2>
+<p>color设置文字的颜色-->color:red;</p>
+<p>font-size设置文字的大小-->font-size:12px;</p>
+<p>font-family设置文字的字体-->font-family:'微软雅黑';</p>
+<p>font-style设置字体是否倾斜</p>
+<ul>
+    <li>不倾斜-->font-style:'normal';</li>
+    <li>倾斜-->font-style:'italic';</li>
+</ul>
+<p>font-weight设置文字是否加粗</p>
+<ul>
+    <li>font-weight:bold;</li>
+    <li>font-weight:normal;</li>
+</ul>
+<p>line-height设置文字的行高（行高相当于在每行文字的上下同时加间距）-->line-height:30px;</p>
+<p>设置文字的几个属性，顺序如下：font:是否加粗 字号/行高 字体；</p>
+<ul>
+    <li>font:normal 12px/36px '微软雅黑';</li>
+</ul>
+<p>text-indent设置文字首行缩进-->text-indent:24px;(设置文字首行缩进24px)</p>
+<p>text-align设置文字水平对齐方式</p>
+<ul>
+    <li>设置文字水平居中-->text-align:center;</li>
+    <li>设置文字居左-->text-align:left;</li>
+    <li>设置文字居右-->text-align:right;</li>
+</ul>
+<br>
+
+<h2>css选择器</h2>
+<h4>1.标签选择器</h4>
+<p>最常见的css选择器是元素选择器。换句话说，文档的元素就是最基本的选择器</p>
+<p>如果设置HTML的样式，选择器通常将是某个html元素，比如p、h1、em、a，甚至可以是html本身</p>
+<h6>h6标题</h6>
+h6{color:blue;}
+<br>
+<h4>2.id选择器</h4>
+<p>首先，id选择器前面有一个#号</p>
+<p>通过id名来选择元素，元素的id名称不能重复，所以一个样式设置项只能对应于页面上一个元素，一个id只能在文档中使用一次，id名一般给程序使用
+，所以不推荐在css设置样式时使用id作为选择器</p>
+<input type="text" name="uname" id="user">
+#user{font-weight:bold;}
+<br>
+<h4>3.类选择器</h4>
+<p>必须将class指定为一个适当的值，类名前有一个点号(.)，通过class类名来选择元素，一个类可应用于多个元素，一个元素上也可以使用多个类，应用
+灵活，可复用，是css中应用最多的一种选择器</p>
+<div class="menu"></div>
+.menu{color:red;}
+<h4>4.属性选择器</h4>
+<p>通过元素的属性进行选择</p>
+<p>比如，选择带name属性的a标签</p>
+<a href="" name="test"></a>
+<a href=""></a>
+a[name]{color:red;}
+<br>
+<h4>5.包含选择器（层级选择器）</h4>
+<p>主要应用在选择父元素下的子元素，或者子元素下面的子元素，可与标签元素结合使用，减少命名，同时也可以通过层级，防止命名冲突</p>
+<div class="menu">
+    <div>
+        <p>p标签</p>
+    </div>
+</div>
+.menu div p{color:cyan;}
+<br>
+<h4>6.组选择器</h4>
+<p>多个选择器，每个选择器直接用逗号(,)隔开。如果有同样的样式设置，可以使用组选择器。</p>
+h1,h2,h3{color:blue;}
+<br>
+<h4>7.伪类及伪元素选择器</h4>
+伪类
+<p>在支持css的浏览器中，链接的不同状态都可以不同的方式显示，这些状态包括：活动状态，已被访问状态，未被访问状态，和鼠标悬停状态</p>
+
+</body>
+</html>
