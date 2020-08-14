@@ -34,7 +34,7 @@ uvwxyz"""
 # 验证.只能匹配\n以外的任意一个字符
 data4_01 = re.match(r".*", text).group()
 print(data4_01)
-# 在后面加上.S,可以让.匹配所有字符，包括\n
+# 在后面加上re.S,可以让.匹配所有字符，包括\n
 data4_02 = re.match(r".*", text, re.S).group()
 print(data4_02)
 
