@@ -8,12 +8,12 @@ class Test(object):
 
     def __call__(self, *args, **kwargs):
         print("---这是类装饰器添加的功能---")
-        return self.func()      # 注意：此处要加括号，代表返回调用的函数！
+        return self.func(*args, **kwargs)      # 注意：此处要加括号，代表返回调用的函数！
 
 
 @Test
-def test1():
-    return "hello, Decorator!"
+def test1(num):
+    return "hello, Decorator!" + str(num)
 
 
-print(test1())
+print(test1(88))
