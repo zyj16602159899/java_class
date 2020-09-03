@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>组选择器</title>
+        <!--组选择器：就是多个选择器的组合，可以把一些公共的样式放到组选择器中-->
+        <style>
+            .box1, .box2, .box3 {width:100px;height:50px;}
+            .box1 {background: red;}
+            .box2 {background: pink;}
+            .box3 {background: gold;}
+        </style>
+    </head>
+    <body>
+        <!--div.box1*3：创建三个div并且指定class属性的名字是box1-->
+        <div class="box1">div标签1</div>
+        <div class="box2">div标签2</div>
+        <div class="box3">div标签3</div>
+    </body>
+</html>

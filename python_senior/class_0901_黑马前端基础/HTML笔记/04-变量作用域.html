@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>变量的作用域</title>
+    <script>
+        // 局部变量：在函数内定义的变量，只能在函数内部使用
+        function fnShow(){
+            // 定义局部变量
+            var iNum = 88;
+            alert(iNum);
+        }
+        fnShow()
+
+        // 定义全局变量：可以在不同的函数中使用，并可共享全局变量
+        var iNum1 = 66;
+        function fnModify(){
+            alert(iNum1);
+            iNum1 = 77;
+            // 在JS中，++等价于+=1,且也可以使用+=1
+            iNum1++;
+            iNum1 += 1;
+            alert(iNum1);
+        }
+        fnModify()
+        // 在JS中，可以数字类型和字符串类型进行相加，并把数字自动转成字符串
+        alert("函数外访问的全局变量：" + iNum1);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

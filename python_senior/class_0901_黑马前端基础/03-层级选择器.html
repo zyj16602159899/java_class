@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>层级选择器</title>
+        <!--层级选择器：给子级添加样式-->
+        <style>
+            div div {
+                width: 200px;
+                height: 100px;
+                background: green;
+            }
+            div p {
+                color: red;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+    <div>
+        <div>这是子级div</div>
+        <p>这是div的子级p标签</p>
+        <div>
+            <!--层级选择器不一定必须是父子关系，祖孙关系也可以找到，并添加样式的操作-->
+            <p>这是div子级的子级p标签</p>
+        </div>
+    </div>
+    </body>
+</html>

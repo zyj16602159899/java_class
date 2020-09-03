@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>元素溢出</title>
+        <!--设置元素溢出，需要在父标签中进行设置-->
+        <!--overflow: hidden;超出部分隐藏-->
+        <!--overflow: visible;超出部分显示，默认项-->
+        <!--overflow: auto;超出部分滚动显示-->
+        <style>
+            .box1 {
+                width: 100px;
+                height: 100px;
+                background: green;
+                overflow: auto;
+            }
+            .box2 {
+                width: 200px;
+                height: 50px;
+                background: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">
+            <div class="box2">哈哈哈哈啊哈哈</div>
+        </div>
+    </body>
+</html>

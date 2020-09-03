@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>display属性的使用</title>
+        <style>
+            .box1 {
+                width: 100px;
+                height: 100px;
+                background: green;
+                /* display: none;把标签隐藏，并且不占用位置 */
+                /* 提示：如果想要标签再次展示，可以设置成block，或删除display这个样式属性（div默认是block属性） */
+                display: none;
+            }
+            .box2 {
+                /* width: 100px;
+                height: 100px; */
+                background: red;
+                /* display: inline;设置div可以和其他元素在一行展示，此时不能设置宽高 */
+                /* 既设置div的宽高，又设置在一行展示，可以通过浮动（float）来完成 */
+                display: inline;
+            }
+            a {
+                /* display: block;设置标签自己单独占用一行，不和其他标签在一行展示 */
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">哈哈哈</div>
+        <p>这是一段话，段落标签</p>
+        <div class="box2">呜呜呜</div>
+        <a href="https://www.baidu.com">百度一下</a>
+        <a href="https://www.sina.com">新浪</a>
+    </body>
+</html>

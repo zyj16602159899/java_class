@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>变量的定义和数据类型</title>
+    <script>
+        // 定义数字类型的变量
+        var iNum = 8;
+        var fNum2 = 2.66;
+        // 定义字符串类型
+        var sName = "小明";
+        // 定义布尔类型
+        var bIsTrue = true;
+        // 定义undefined类型
+        var unData;
+        // 定义null类型
+        var nIsNull = null;
+        // 定义object类型
+        var oPerson = {
+            "name": "小爱",
+            "age": 20
+            }
+        /*
+        alert(iNum);
+        alert(fNum2);
+        alert(sName);
+        */
+        // 查看数据类型，使用typeof
+        // alert(typeof(iNum));
+        // alert(typeof(fNum2));
+        // alert(typeof(sName));
+        // alert(typeof(bIsTrue));
+        // alert(typeof(unData));
+        // 由于JS历史原因，设计之初没有null类型，null值归属于object类型，后续语言迭代也未进行修改
+        // 但现在对使用者来说，null值属于null类型
+        // alert(typeof(nIsNull));
+        alert(typeof(oPerson));
+        alert(oPerson.name);
+        console.log(oPerson.name);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

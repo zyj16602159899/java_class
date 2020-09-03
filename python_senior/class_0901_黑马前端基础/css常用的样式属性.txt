@@ -1,0 +1,43 @@
+1.布局常用样式属性：
+width 设置元素(标签)的宽度，如：width:100px;
+height 设置元素(标签)的高度，如：height:200px;
+background 设置元素背景色或者背景图片，如：background:gold; 设置元素的背景色, background: url(images/logo.png); 设置元素的背景图片。如果不想要重复展示图片，可在后面加个no-repeat; 这样会主动拉伸图片
+border 设置元素四周的边框，如：border:1px solid black; 设置元素四周边框是1像素宽的黑色实线
+以上也可以拆分成四个边的写法，分别设置四个边的：
+border-top 设置顶边边框，如：border-top:10px solid red;
+border-left 设置左边边框，如：border-left:10px solid blue;
+border-right 设置右边边框，如：border-right:10px solid green;
+border-bottom 设置底边边框，如：border-bottom:10px solid pink;
+padding 设置元素包含的内容和元素边框的距离，也叫内边距，如padding:20px;padding是同时设置4个边的，也可以像border一样拆分成分别设置四个边:padding-top、padding-left、padding-right、padding-bottom。
+margin 设置元素和外界的距离，也叫外边距，如margin:20px;margin是同时设置4个边的，也可以像border一样拆分成分别设置四个边:margin-top、margin-left、margin-right、margin-bottom。
+float 设置元素浮动，浮动可以让块元素排列在一行，浮动分为左浮动：float:left; 右浮动：float:right;
+
+2.文本常用样式属性：
+color 设置文字的颜色，如： color:red;
+font-size 设置文字的大小，如：font-size:12px;
+font-family 设置文字的字体，如：font-family:‘微软雅黑’;为了避免中文字不兼容，一般写成：font-family:‘Microsoft Yahei’;
+font-weight 设置文字是否加粗，如：font-weight:bold; 设置加粗 font-weight:normal 设置不加粗
+line-height 设置文字的行高，如：line-height:24px; 表示文字高度加上文字上下的间距是24px，也就是每一行占有的高度是24px
+text-decoration 设置文字的下划线，如：text-decoration:none; 将文字下划线去掉
+text-align 设置文字水平对齐方式，如text-align:center 设置文字水平居中
+text-indent 设置文字首行缩进，如：text-indent:24px; 设置文字首行缩进24px
+
+3.元素溢出的概念：
+当子元素（标签）的尺寸超过父元素（标签）的尺寸时，此时需要设置父元素显示溢出的子元素的方式，设置的方法是通过overflow属性来完成。
+overflow的设置项：
+visible默认值，显示子标签溢出部分；
+hidden隐藏子标签溢出部分；
+auto如果子标签溢出，则可以滚动查看其余内容
+
+4.盒子模型
+概念：所谓的盒子模型，就是把HTML页面的元素看作一个矩形盒子，盒子是由内容（content）、内边距（padding）、边框（border）、外边距（margin）四部分组成。
+盒子模型主要设置4部分内容：
+（1）内容大小（width,height）
+（2）边框大小（border）
+（3）内边距大小（padding）
+（4）外边距大小（margin）
+盒子的真实尺寸：
+盒子的宽度：width + padding左右 + border左右
+盒子的高度：height + padding上下 + border上下
+默认情况下，盒子的大小和内容的大小是一致的，但是设置内边距（padding）和边框（border）还有内容（content）大小，都会影响盒子的真实尺寸。
+不会受到外边距（margin）属性的影响。

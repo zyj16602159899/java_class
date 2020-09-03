@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>css练习</title>
+        <style>
+            h2 {
+            <!--1.标签选择器-->
+                color:gold;
+            }
+            .myp {
+            <!--2.类选择器-->
+                color:green;
+            }
+            .mybg {
+                background:blue;
+            }
+            div div {
+            <!--3.层级选择器：给子级添加样式-->
+                color: brown;
+            }
+            div p {
+                color: blue;
+            }
+            #box {
+            <!--id选择器：以#开头，因id是唯一的，因此只能给页面中的一个元素添加样式-->
+                color: yellow;
+            }
+            <!--组选择器：就是多个选择器的组合，可以把一些公共的样式放到组选择器中-->
+            .box1, .box2, .box3 {width:100px;height:50px;}
+            .box1 {background: red;}
+            .box2 {background: pink;}
+            .box3 {background: gold;}
+            <!--伪类选择器：就是给其他选择器添加特殊效果，表现形式选择器后面加上冒号并跟上伪类的名字-->
+            div {
+                background: black;
+                width: 50px;
+                height: 50px;
+            }
+            div:hover {
+                background: green;
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+        <!--<link rel="stylesheet" href="css/main.css">-->
+    </head>
+    <body>
+        <h1 style="color:blue;">这是一级标题</h1>
+        <h2>这是二级标题</h2>
+        <div>这是div标签</div>
+        <!--可以使用多个类选择器-->
+        <p class="myp mybg">这是段落标签</p>
+        <div>
+            <div>这是div中的div子标签</div>
+            <div>
+                <!--层级选择器不一定必须是父子关系，祖孙关系也可以找到，添加样式的操作-->
+                <p>这是div中的p标签</p>
+            </div>
+        </div>
+        <h3 id="box">这是三级标题</h3>
+        <!--h4.box1*3：创建三个div并且指定class属性的名字是box1-->
+        <h4 class="box1">这是四级标题1</h4>
+        <h4 class="box2">这是四级标题2</h4>
+        <h4 class="box3">这是四级标题3</h4>
+    </body>
+</html>
