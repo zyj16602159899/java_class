@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>循环语句</title>
+    <script>
+        var aList = [1,22,333];
+
+        // for循环遍历数组
+        for(var index = 0; index < aList.length; index++){
+            // 根据下标获取数据
+            var oValue = aList[index];
+            alert(oValue);
+        }
+
+        // while循环进行遍历数组
+        // 开始取值的下标
+        var index = 0;
+        while(index < aList.length){
+            // 根据下标获取数据
+            var oValue = aList[index];
+            alert(oValue);
+            index++;
+        }
+
+        // do-while循环取值
+        var index = 5;
+        do {
+            // 这里要完成取值操作，不管条件是否成立，do至少执行一次
+            alert("测试是否执行此代码");
+            var oValue = aList[index];
+            alert(oValue);
+            index++;
+        } while(index < aList.length)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

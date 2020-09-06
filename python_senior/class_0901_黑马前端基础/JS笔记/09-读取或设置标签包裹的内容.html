@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>使用innerHTML读取或设置标签包裹的内容</title>
+    <script>
+        window.onload = function() {
+            var oDiv = document.getElementById("div1");
+            // 获取标签的内容
+            alert(oDiv.innerHTML);
+            // 设置标签的内容
+            oDiv.innerHTML = "这是修改后的div标签内容";
+        }
+    </script>
+</head>
+<body>
+    <div id="div1">这是一个div标签</div>
+</body>
+</html>

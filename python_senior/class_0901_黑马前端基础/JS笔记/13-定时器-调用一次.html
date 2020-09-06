@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>定时器-只调用一次</title>
+    <script>
+        function fnShow(name,age) {
+            alert("个人信息：" + name + age);
+            alert(tid);
+            // 销毁定时器
+            clearTimeout(tid);
+        }
+        // 根据时间间隔调用一次函数的定时器
+        // 定时器用完之后，要记得销毁
+        // 返回值表示创建定时器返回的id，通俗理解就是创建的第几个定时器
+        var tid = setTimeout(fnShow, 1000, "小黑", 22)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

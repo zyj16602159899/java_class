@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>获取标签元素</title>
+    <script>
+        // 代码都是从上往下执行的
+        // 如果获取的对象是null，表示标签没有获取成功
+        // 通过document.getElementById()获取页面标签元素
+        /*
+        function fnLoad() {
+            var oContent = document.getElementById("div1");
+            alert(oContent);
+        }
+        // 页面标签和数据都加载完成之后，触发onload事件
+        window.onload = fnLoad;
+        */
+        // 匿名函数
+        window.onload = function() {
+            var content = document.getElementById("div1");
+            alert(content);
+        };
+    </script>
+</head>
+<body>
+    <div id="div1">这是一个div标签</div>
+</body>
+</html>

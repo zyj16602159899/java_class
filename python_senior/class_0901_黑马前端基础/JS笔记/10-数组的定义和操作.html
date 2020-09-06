@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数组的定义和操作</title>
+    <script>
+        // 定义方式1：实例化对象创建
+        var aList1 = new Array(1,2,3);
+        console.log(aList1);
+        // 定义方式2：字面量方式创建
+        var aList2 = ["a","b","c","d"]
+        console.log(aList2);
+
+        // 多维数组
+        var aList3 = [[1,2,3],["a","b","c"],"哈哈"]
+        console.log(aList3);
+
+        // 根据下标取值
+        // 注意：JS中不支持负数下标
+        alert(aList1[0]);
+        // 数组的长度
+        alert(aList2.length);
+        // 根据下标修改数据
+        aList1[2] = 10;
+        console.log(aList1);
+        // 追加数据
+        aList2.push("e");
+        console.log(aList2);
+        // 删除最后一个元素，此方法不支持下标
+        var oValue = aList3.pop();
+        console.log(oValue);
+        console.log(aList3);
+        // 插入数据
+        aList3.splice(1,0,"apple");
+        console.log(aList3);
+        // 删除数据
+        // 从下标2开始，删除2个数据
+        aList2.splice(2,2);
+        console.log(aList2);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
