@@ -9,10 +9,43 @@
     <!--导入jQuery对应的js文件-->
     <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
     <script>
+        $(function(){
+            // 获取标签对象
+            // 1.标签选择器
+            var $p = $("p");
+            alert($p.length);
+            // 通过jQuery设置标签的样式
+            $p.css({"color":"green","font-size":"20px"});
 
+            // 2.类选择器
+            var $div = $(".div1");
+            alert($div.length);
+            $div.css({"width":"200px","height":"100px","background":"red"});
+
+            // 3.id选择器
+            var $id = $("#submit");
+            alert($id.length);
+
+            // 4.层级选择器
+            var h1 = $("div h1");
+            alert(h1.length);
+
+            // 5.属性选择器：先根据标签选择html标签，然后根据属性值进行过滤标签
+            var $input = $("input[type=text]");
+            alert($input.length);
+        });
     </script>
 </head>
 <body>
-
+    <p>第一个p标签</p>
+    <p>第二个p标签</p>
+    <div class="div1">这是div标签</div>
+    <input type="button" id="submit" value="点击按钮">
+    <div>
+        <h1>这是h1标签</h1>
+    </div>
+    请输入：<input type="text"><br>
+    <input type="button" value="按钮"><br>
+    请上传：<input type="file">
 </body>
 </html>

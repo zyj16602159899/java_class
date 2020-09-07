@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选择集过滤</title>
+    <!--导入jQuery对应的js文件-->
+    <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(function(){
+            // 通过jQuery选择器获取html标签
+            var $divs = $("div");
+            // 获取包含有指定选择器的父标签
+            $divs.has("p").css({"background":"red"});
+            // 根据下标选择指定的标签
+            $divs.eq(1).css({"background":"green"});
+
+            // 选择集过滤就是在选中的集合标签里面，根据需要过滤出来自己想要的标签
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <p>p标签</p>
+    </div>
+    <div>
+        <input type="button" value="按钮">
+    </div>
+</body>
+</html>
