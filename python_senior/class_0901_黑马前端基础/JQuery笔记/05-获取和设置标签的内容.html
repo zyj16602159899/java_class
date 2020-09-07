@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>获取和设置标签的内容</title>
+    <!--导入jQuery对应的js文件-->
+    <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(function(){
+            var $div = $("div");
+            // jquery的方式获取标签内容：【html()方法】
+            alert($div.html());
+            // 设置标签的内容
+            $div.html("<a href='https://www.baidu.com'>百度一下，你就知道</a>");
+            // 追加内容
+            $div.append("<a href='https://www.baidu.com'>谷歌地图</a>");
+        })
+    </script>
+</head>
+<body>
+    <div>哈哈哈</div>
+</body>
+</html>
