@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>json数据转换成js对象</title>
+    <!--    json：就是类似于JavaScript对象的字符串，本质上就是一个字符串，同时还是一种数据格式-->
+    <script>
+        // 对象格式的json数据
+        var sJson = '{"name":"小海", "score":99}';
+        // 数组格式的json数据
+        var sJson_list = ["小达", 88];
+
+        // json数据转换成JavaScript对象
+        var oPerson = JSON.parse(sJson);
+        var oStudent = JSON.parse(sJson_list);
+        alert(oPerson.name + oPerson.score);
+        // 通过下标获取指定js对象
+        alert(oStudent[0] + oStudent[1]);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

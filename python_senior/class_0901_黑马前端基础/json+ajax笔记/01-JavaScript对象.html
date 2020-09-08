@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript对象</title>
+    <!--导入jQuery对应的js文件-->
+    <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        // 1.Object类创建自定义对象
+        var oPerson = new Object();
+        // 添加属性
+        oPerson.name = "小梅";
+        oPerson.age = 22;
+        alert(oPerson.name + oPerson.age);
+        // 添加方法
+        oPerson.show = function(){
+            alert("这是Object类创建的自定义对象的方法");
+        }
+        // 调用方法
+        oPerson.show();
+
+        // 2.使用字面量创建自定义对象
+        var oStudent = {
+            name: "小明",
+            age: 25,
+            show: function(){
+                alert("这是字面量创建的自定义对象的方法");
+            }
+        }
+
+        // 通过对象获取属性和调用方法
+        alert(oStudent.name + oStudent.age);
+        oStudent.show();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

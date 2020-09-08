@@ -5,14 +5,55 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>事件代理</title>
+    <title>事件代理delegate</title>
     <!--导入jQuery对应的js文件-->
     <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <!--    事件冒泡：就是事件会一级一级往上（父控件）传递-->
+    <!--    默认会进行事件冒泡-->
+    <!--    取消事件冒泡：不让事件向父级控件传递，在子标签的事件后加上return false-->
     <script>
+        $(function(){
+            var $btn = $("#btn1");
+            var $div = $("div");
+            var $list = $("#list");
 
+            $btn.click(function(){
+                alert("我是点击按钮");
+                return false;
+            });
+
+            $div.click(function(){
+                alert("我是div");
+            });
+
+            // 通过事件代理，让父控件代理子控件的事件，然后执行子控件的相关操作
+            // $list.delegate("li", "click", function(){})--->第一个参数是需要代理的子控件，第二个参数是事件名称，第三个是匿名函数
+            // 可以代理不同子控件的事件，子控件用,隔开即可
+            $list.delegate("li", "click", function(){
+                $(this).css({"color":"red"});
+            });
+
+            // 代理多个不同子控件，用,隔开
+            var $div1 = $("#box");
+            $div1.delegate("#p2,#btn2", "click", function(){
+                $(this).css({"color":"green"});
+            });
+        })
     </script>
 </head>
 <body>
-
+    <div>
+        <p id="p1">一个p标签</p>
+        <input type="button" value="点击按钮" id="btn1">
+        <ul id="list">
+            <li>哈哈哈</li>
+            <li>吼吼吼</li>
+            <li>嘿嘿嘿</li>
+        </ul>
+    </div>
+    <div id="box">
+        <p id="p2">一个p标签</p>
+        <input type="button" value="点击按钮" id="btn2">
+    </div>
 </body>
 </html>
